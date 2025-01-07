@@ -1,1 +1,191 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Orbitron:wght@400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+/* 전체 레이아웃 */
+.container{
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+}
+/* 상단 */
+.header{
+    position: relative;
+    width: 100%;
+    height: 100px;
+background-color: #0077cb;
+}
+/* 로고 */
+.header .logo{
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding: 0 20px;
+    /* background-color: aquamarine; */
+}
+.header .logo h1{
+    color: #fff;
+font-size: 50px;
+line-height: 100px;
+font-family: "DM Serif Text", serif;
+}
+/* 메뉴 */
+.header .menu{
+    width: 75%;
+    height: 100%;
+}
+.header .menu .contents{
+    position: absolute;
+    bottom: 5px;
+    right: 40%;
+    transform: translateX(50%);
+    /* background-color: blueviolet; */
+    
+}
+.header .menu .contents li{
+    float: left;
+    width: 150px;
+    padding: 1px 20px;
+    /* background-color: black; */
+    margin-right: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+}
+.header .menu .contents li a{
+    color: #fff;
+}
+.header .menu .contents li:hover{
+    background-color: white;
+}
+.header .menu .contents li:hover a{
+    color: black;
+}
+/* 메인 */
+.main{
+    width: 100%;
+    height: 700px;
+    /* background-color: aquamarine; */
+    border-bottom: 1px solid #333;
+}
+/* 메인 상단 */
+.main_top{
+width: 100%;
+height: 300px;
+}
+/* 메인 하단 */
+.main_bottom{
+    width: 100%;
+    height: 400px;
+    /* background-color: silver; */
+}
+/* 공지사항 네비 */
+.main_bottom .announcement{
+    width: calc(100% / 2);
+    height: 100px;
+    border-bottom:1px solid #333;
+}
+.main_bottom .announcement h3{
+    float: left;
+    padding: 10px 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.main_bottom .announcement h3 a{
+    color: #b1babc;
+}
+.main_bottom .announcement h3:hover{
+    background-color: #ededed;
+    border: 1px solid #ededed;
+}
+.main_bottom .announcement h3:hover a{
+    color: #c50000;
+}
+/* 공지사항 */
+.main_bottom .text{
+    float: left;
+    margin-top: 20px;
+}
+.main_bottom .text li{
+    padding: 10px;
+    font-size: 14px;
+}
+/* 추천 탭 */
+.main_bottom .section_wrap{
+width: 50%;
+float: right;
+}
+.main_bottom .section_wrap article{
+    float: right;
+    margin-right: 30px;   
+    text-align: center;
+}
+.main_bottom .section_wrap article .pic img{
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.main_bottom .section_wrap article h3{
+    font: normal 16px "arial";
+}
+/* 하단 */
+.footer{
+    width: 100%;
+    height: 100px;
+}
+/* 하단 왼쪽 */
+.footer .footer_left{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.footer .footer_left .ft_nav{
+    /* background-color: aqua; */
+}
+.footer .footer_left .ft_nav::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.footer .footer_left .ft_nav li{
+    float: left;
+    padding: 10px 20px;
+    border-right: 1px solid #dcdcdc;
+}
+.footer .footer_left .ft_nav li a{
+    font: normal 16px "arial";
+    color: #747474;
+}
+.footer .footer_left .ft_nav li:last-child{
+    border: none;
+}
+.footer .footer_left .address{
+    margin-top: 25px;
+}
+.footer .footer_left .address p{
+    color: #b1babc;
+    font: normal 14px "arial";
+}
+/* 하단 오른쪽 */
+.footer .footer_right{
+    width: 50%;
+    height: 100px;
+    float: right;
+    /* background-color: #0077cb; */
+}
+.footer .footer_right li{
+    float: right;
+    line-height: 100px;
+    padding: 0 3px;
+}
